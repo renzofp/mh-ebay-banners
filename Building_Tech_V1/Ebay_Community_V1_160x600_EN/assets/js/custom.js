@@ -34,9 +34,9 @@ function createTimeline(){
     var frame1_blockText = document.querySelectorAll(".content-frame-1 .block-text");
     
     tl.set(contentBg, {y:-30});
-    tl.set(frame1_contentText, {scale:1.15, x:10, y:20});
+    tl.set(frame1_contentText, {scale:1.15, x:10, y:23});
     tl.set([frame1_text], {autoAlpha:0, y:-10});
-    tl.set(frame1_blockText, {scaleX:1.18, scaleY:1.5});
+    tl.set(frame1_blockText, {scaleX:1.18, scaleY:1.6});
     tl.set([frame1_cta, frame1_ctaArrow], {autoAlpha:0, x:-20});
 
     /* ***** Base Gsap Timeline ***** */
