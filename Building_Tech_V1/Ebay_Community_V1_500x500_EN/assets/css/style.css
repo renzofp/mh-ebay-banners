@@ -208,12 +208,12 @@ img{
 }
 
 .content-frame .block-text{
-	z-index:99;
-	top:225px;
-	width:255px;
-	height:150px;
-	background:var(--color-1);
-	transform-origin:0% 0%;
+	z-index: 99;
+    top: 288px;
+    width: 350px;
+    height: 150px;
+    background: var(--color-1);
+    transform-origin: 0% 0%;
 }
 
 .content-frame .content-text{
@@ -252,21 +252,20 @@ img{
 }
 
 .content-frame .block-cta{
-	left:auto;
-	right:0;
-	bottom:150px;
-	width:225px;
-	height:75px;
+	bottom: 0;
+    left: 0;
+    height: 62px;
+    width: 220px;
 	background:var(--color-2);
 }
 
 .content-frame .block-logo{
-	left:auto;
-	right:0;
-	bottom:0;
-	width:150px;
-	height:150px;
-	background:var(--color-6);
+	left: auto;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    background: var(--color-6);
 }
 
 .content-frame .block-1{
@@ -278,19 +277,19 @@ img{
 }
 
 .content-frame .block-2{
-	bottom:75px;
-	left:75px;
-	height:75px;
-	width:75px;
-	background:var(--color-5);
+	bottom: 0px;
+    left: 285px;
+    height: 62px;
+    width: 65px;
+    background: var(--color-5);
 }
 
 .content-frame .block-3{
-	bottom:0;
-	left:75px;
-	height:75px;
-	width:75px;
-	background:var(--color-4);
+	bottom: 0;
+    left: 220px;
+    height: 62px;
+    width: 65px;
+    background: var(--color-3);
 }
 
 .content-frame .content-inner{

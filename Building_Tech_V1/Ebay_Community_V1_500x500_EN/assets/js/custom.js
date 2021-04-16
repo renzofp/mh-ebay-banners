@@ -34,9 +34,9 @@ function createTimeline(){
     var frame1_blockText = document.querySelectorAll(".content-frame-1 .block-text");
     
     tl.set(contentBg, {y:-30});
-    tl.set(frame1_contentText, {scale:1.25, x:40, y:36});
+    tl.set(frame1_contentText, {scale:1.15, x:11, y:12});
     tl.set([frame1_text], {autoAlpha:0, y:-10});
-    tl.set(frame1_blockText, {scaleX:1.18, scaleY:1.5});
+    tl.set(frame1_blockText, {scaleX:1, scaleY:1.5});
     tl.set([frame1_cta, frame1_ctaArrow], {autoAlpha:0, x:-20});
 
     /* ***** Base Gsap Timeline ***** */
@@ -64,15 +64,15 @@ function createTimeline(){
 
         
         tl.addLabel("frame3", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:78, force3D:"true", ease: "power4.out"}, "frame3");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-35, force3D:"true", ease: "power4.out"}, "frame3");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, force3D:"true", ease: "power4.out"}, "frame3+=0.4");
         
         tl.addLabel("frame4", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:78, force3D:"true", ease: "power4.out"}, "frame4");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-35, force3D:"true", ease: "power4.out"}, "frame4");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, force3D:"true", ease: "power4.out"}, "frame4+=0.4");
         
         tl.addLabel("frame5", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:78, force3D:"true", ease: "power4.out"}, "frame5");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-35, force3D:"true", ease: "power4.out"}, "frame5");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, force3D:"true", ease: "power4.out"}, "frame5+=0.4");
         
     /* ***** End Coding Here ***** */
