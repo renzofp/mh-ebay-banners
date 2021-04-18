@@ -34,7 +34,7 @@ function createTimeline(){
     var frame1_ctaArrow = document.querySelectorAll(".content-frame-1 .cta-arrow");
     var frame1_blockText = document.querySelectorAll(".content-frame-1 .block-text");
     
-    tl.set(contentBg, {y:-30});
+    tl.set(contentBg, {x:30});
     tl.set(frame1_contentText, {scale:1.3, x:40, y:40});
     tl.set([frame1_text], {autoAlpha:0, y:10});
     tl.set(frame1_blockText, {scaleX:1.74, scaleY:1.51});
@@ -48,12 +48,12 @@ function createTimeline(){
 
         /* ***** Custom Gsap Timeline ***** */
         tl.addLabel("frame1");
-        tl.to(fullBlock1, {duration:0.8, y:"100%", ease: "power4.out"}, "frame1");
-        tl.to(fullBlock2, {duration:0.8, y:"100%", ease: "power4.out"}, "frame1+=0.1");
-        tl.to(fullBlock3, {duration:0.8, y:"100%", ease: "power4.out"}, "frame1+=0.4");
-        tl.to(fullBlock4, {duration:1, y:"100%", ease: "power4.out"}, "frame1+=0.4");
+        tl.to(fullBlock1, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1");
+        tl.to(fullBlock2, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1+=0.1");
+        tl.to(fullBlock3, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1+=0.4");
+        tl.to(fullBlock4, {duration:1, x:"-100%", ease: "power4.out"}, "frame1+=0.4");
         
-        tl.to(contentBg, {duration:0.8, y:0, ease: "power3.out"}, "frame1+=0.4");
+        tl.to(contentBg, {duration:0.8, x:0, ease: "power3.out"}, "frame1+=0.4");
         
         tl.to(frame1_text, {duration:1, stagger:1, autoAlpha:1, y:0, ease: "power3.out"}, "frame1+=0.4");
         
@@ -66,15 +66,15 @@ function createTimeline(){
 
         
         tl.addLabel("frame3", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-5, ease: "power4.out"}, "frame3");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.7, autoAlpha:0, x:120, ease: "power4.out"}, "frame3");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, ease: "power4.out"}, "frame3+=0.4");
         
         tl.addLabel("frame4", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-5, ease: "power4.out"}, "frame4");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.7, autoAlpha:0, x:120, ease: "power4.out"}, "frame4");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, ease: "power4.out"}, "frame4+=0.4");
         
         tl.addLabel("frame5", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-5, ease: "power4.out"}, "frame5");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.7, autoAlpha:0, x:120, ease: "power4.out"}, "frame5");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, ease: "power4.out"}, "frame5+=0.4");
         
     /* ***** End Coding Here ***** */
