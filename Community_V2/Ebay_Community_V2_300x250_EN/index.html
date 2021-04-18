@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- - - - - - Ad Variables - CSS - - - - - -->
+	<style>
+	:root {
+		--ad-width:300px;
+		--ad-height:250px;
+	}
+	</style>
+
+	<!-- - - - - - Ad Size - - - - - -->
+	<meta name="ad.size" content="width=300,height=250">
+	<meta charset="UTF-8">
+
+	<!-- - - - - - Title/Meta - - - - - -->
+	<title>Ebay</title>
+
+	<!-- - - - - - StyleSheet - - - - - -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- - - - - - Gsap (3.0.2) | CDN - - - - - -->
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.1.0_min.js"></script>
+
+	<!-- - - - - - JS | Base - - - - - -->
+	<script src="./assets/js/base.js"></script>
+
+	<!-- - - - - - JS | Custom JS - - - - - -->
+	<script src="./assets/js/custom.js"></script>
+
+	<!-- - - - - - JS | Click Tag - - - - - -->
+	<script>
+		var clickTag = "https://www.google.ca/";
+	</script>
+</head>
+<body onload="onDomLoad()">
+
+	<!-- - - - - - Ad Container - - - - - -->
+	<div id="ad-container">
+
+		<!-- Content Banner -->
+		<div class="content-banner">
+			<!-- Start Coding Here -->
+
+			<div class="content-animate-full content-animate-full-1">
+				<div class="block block-1"></div>
+				<div class="block block-2"></div>
+				<div class="block block-3"></div>
+			</div>
+			
+			<div class="content-frame content-frame-1">
+				<div class="content-text">
+					<img class="text text-1" src="assets/img/text-1.png">
+					<img class="text text-2" src="assets/img/text-2.png">
+				</div>
+				<div class="content-inner">
+					<!-- <div class="block block-text"></div> -->
+					<div class="block block-cta"></div>
+					<div class="block block-logo"></div>
+					<div class="block block-1"></div>
+					<div class="block block-2"></div>
+					<div class="block block-3"></div>
+
+					<div class="content-cta">
+						<img class="cta" src="assets/img/cta.png">
+						<img class="cta-arrow" src="assets/img/cta-arrow.png">
+					</div>
+				</div>
+			</div>
+
+			<svg class="logo-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.05 39.97"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="ebaylogo-1" d="M63.34,21.2c-4.55.15-7.37,1-7.37,3.95,0,1.93,1.57,4,5.47,4,5.26,0,8.07-2.87,8.07-7.55v-.52C67.66,21.12,65.38,21.13,63.34,21.2Zm11.18,6.19c0,1.46,0,2.9.17,4.17H70a25.1,25.1,0,0,1-.17-3.12c-2.52,3.08-5.52,4-9.68,4-6.17,0-9.48-3.26-9.48-7C50.7,20,55.2,18,63,17.86c2.13-.05,4.53-.06,6.51-.06v-.52c0-3.65-2.34-5.15-6.4-5.15-3,0-5.23,1.25-5.48,3.4H52.36c.56-5.36,6.21-6.72,11.18-6.72,5.95,0,11,2.11,11,8.39Z"/><path class="ebaylogo-1" d="M20,18.54c-.2-4.69-3.58-6.43-7.2-6.43-3.9,0-7,2-7.56,6.43ZM5.11,21.86c.27,4.54,3.4,7.22,7.72,7.22,3,0,5.65-1.21,6.54-3.85h5.17c-1,5.36-6.72,7.18-11.64,7.18C4,32.41,0,27.5,0,20.88,0,13.58,4.1,8.79,13,8.79c7.07,0,12.25,3.69,12.25,11.74v1.33Z"/><path class="ebaylogo-1" d="M38.1,29c4.66,0,7.84-3.35,7.84-8.39s-3.19-8.39-7.84-8.39-7.84,3.35-7.84,8.39S33.47,29,38.1,29ZM25.24,0h5V12.56c2.46-2.92,5.84-3.77,9.17-3.77,5.59,0,11.8,3.76,11.8,11.87,0,6.78-4.94,11.75-11.89,11.75a11.67,11.67,0,0,1-9.17-3.88,25.87,25.87,0,0,1-.18,3H25.07c.09-1.57.17-3.57.17-5.17Z"/><path class="ebaylogo-1" d="M100.05,9.62,84.55,40H78.94l4.45-8.43L71.73,9.62h5.86l8.59,17.14L94.74,9.63Z"/></g></g></svg>
+
+			<!-- End Coding Here -->
+		</div>
+
+		<!-- Btn Replay -->
+		<a class="btn--replay" onclick="replayTimeline()">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-undo-alt fa-w-16 fa-7x"><path fill="currentColor" d="M255.545 8c-66.269.119-126.438 26.233-170.86 68.685L48.971 40.971C33.851 25.851 8 36.559 8 57.941V192c0 13.255 10.745 24 24 24h134.059c21.382 0 32.09-25.851 16.971-40.971l-41.75-41.75c30.864-28.899 70.801-44.907 113.23-45.273 92.398-.798 170.283 73.977 169.484 169.442C423.236 348.009 349.816 424 256 424c-41.127 0-79.997-14.678-110.63-41.556-4.743-4.161-11.906-3.908-16.368.553L89.34 422.659c-4.872 4.872-4.631 12.815.482 17.433C133.798 479.813 192.074 504 256 504c136.966 0 247.999-111.033 248-247.998C504.001 119.193 392.354 7.755 255.545 8z"></path></svg>
+		</a>
+
+		<!-- HitZone - ClickTag -->
+		<a id="hitzone" href="javascript:void(0);" onclick="javascript:window.open(window.clickTag)"></a>
+
+	</div>
+	
+</body>
+</html>
