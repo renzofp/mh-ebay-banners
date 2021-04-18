@@ -69,15 +69,15 @@ function createTimeline(){
 
 
         tl.addLabel("frame3", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:78, force3D:"true", ease: "power4.out"}, "frame3");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-150, force3D:"true", ease: "power4.out"}, "frame3");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, force3D:"true", ease: "power4.out"}, "frame3+=0.4");
         
         tl.addLabel("frame4", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:78, force3D:"true", ease: "power4.out"}, "frame4");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-150, force3D:"true", ease: "power4.out"}, "frame4");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, force3D:"true", ease: "power4.out"}, "frame4+=0.4");
         
         tl.addLabel("frame5", "+=2.2");
-        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:78, force3D:"true", ease: "power4.out"}, "frame5");
+        tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.2, autoAlpha:0, x:-150, force3D:"true", ease: "power4.out"}, "frame5");
         tl.to(frame1_ctaArrow, {duration:0.5, scaleX:1, autoAlpha:1, x:0, force3D:"true", ease: "power4.out"}, "frame5+=0.4");
         
     /* ***** End Coding Here ***** */

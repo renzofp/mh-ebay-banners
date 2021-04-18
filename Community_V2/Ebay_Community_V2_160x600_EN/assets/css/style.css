@@ -68,7 +68,7 @@ img{
     max-width:var(--ad-width);
     max-height:var(--ad-height);
     box-sizing:border-box;
-	background-color:var(--ad-bg);
+	background: var(--color-4);
 	color:var(--ad-color);
 }
 
