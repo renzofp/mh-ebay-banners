@@ -26,9 +26,9 @@ function createTimeline(){
     var contentBanner = document.querySelectorAll(".content-banner");
     var contentBg = document.querySelectorAll(".content-bg");
     var fullBlock1 = document.querySelectorAll(".content-animate-full-1 .block-1");
-    // var fullBlock2 = document.querySelectorAll(".content-animate-full-1 .block-2");
-    // var fullBlock3 = document.querySelectorAll(".content-animate-full-1 .block-3");
-    // var fullBlock4 = document.querySelectorAll(".content-animate-full-1 .block-4");
+    var fullBlock2 = document.querySelectorAll(".content-animate-full-1 .block-2");
+    var fullBlock3 = document.querySelectorAll(".content-animate-full-1 .block-3");
+    var fullBlock4 = document.querySelectorAll(".content-animate-full-1 .block-4");
     
     var frame1 = document.querySelectorAll(".content-frame-1");
     var frame1_contentText = document.querySelectorAll(".content-frame-1 .content-text");
@@ -42,11 +42,12 @@ function createTimeline(){
     var frame1_block4 = document.querySelectorAll(".content-frame-1 .block-4");
     
     tl.set(contentBg, {x:30});
-    tl.set(frame1_contentText, {scale:1, x:70, y:0});
+    tl.set(frame1_contentText, {scale:1, x:90, y:0});
     tl.set([frame1_blockCta, frame1_block2, frame1_block3, frame1_block4, frame1_cta], {x:100, y:0});
     tl.set([frame1_text], {autoAlpha:0, x:60});
     tl.set(frame1_blockText, {scaleX:2.74, scaleY:1.51, zIndex:50});
     tl.set(frame1_ctaArrow, {scaleX:1, autoAlpha:0, x:-10});
+    tl.set([fullBlock1, fullBlock2, fullBlock3, fullBlock4], {x:"-8.1%",scaleX:0.919});
 
     /* ***** Base Gsap Timeline ***** */
     tl.to(contentBanner, {duration:0.6, autoAlpha:1, ease: "power2.out"});
@@ -56,7 +57,7 @@ function createTimeline(){
 
         /* ***** Custom Gsap Timeline ***** */
         tl.addLabel("frame1");
-        tl.to(fullBlock1, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1");
+        tl.to([fullBlock1, fullBlock2, fullBlock3, fullBlock4], {stagger: 0.1, duration:0.5, x:"-100%", ease: "power4.out"}, "frame1");
         tl.to(contentBg, {duration:1, x:0, ease: "power3.out"}, "frame1");        
         tl.to(frame1_text, {duration:1, stagger:1, autoAlpha:1, x:55, ease: "power3.out"}, "frame1");
         tl.to(frame1_text, {duration:1, autoAlpha:1, x:0, ease: "back.out"}, "frame1+=2");
