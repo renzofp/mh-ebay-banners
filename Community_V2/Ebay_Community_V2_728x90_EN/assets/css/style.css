@@ -31,12 +31,12 @@ table{  border-collapse: collapse; border-spacing: 0; }
 
 /* ***** Main Variables ***** */
 :root{
-	--color-1:#07522c; /* Main Color Variable */
-	--color-2:#05823f; /* Second Color Variable */
-	--color-3:#36cf57; /* Second Color Variable */
-	--color-4:#5ee471; /* Second Color Variable */
-	--color-5:#9ef4a6; /* Second Color Variable */
-	--color-6:#ccfdce; /* Second Color Variable */
+	--color-1:#aa5404; /* Main Color Variable */
+	--color-2:#e58c02; /* Second Color Variable */
+	--color-3:#f7b100; /* Second Color Variable */
+	--color-4:#fbcd25; /* Second Color Variable */
+	--color-5:#f7e376; /* Second Color Variable */
+	--color-6:#fcf2bd; /* Second Color Variable */
 	--color-white:#fff; /* White Color Variable */
 	--color-black:#000; /* Black Color Variable */
 	--ad-bg:#fff; /* Banner Background */

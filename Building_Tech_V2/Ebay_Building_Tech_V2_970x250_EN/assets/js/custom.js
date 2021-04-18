@@ -26,6 +26,8 @@ function createTimeline(){
     var fullBlock2 = document.querySelectorAll(".content-animate-full-1 .block-2");
     var fullBlock3 = document.querySelectorAll(".content-animate-full-1 .block-3");
     var fullBlock4 = document.querySelectorAll(".content-animate-full-1 .block-4");
+    var logoTop = document.querySelectorAll(".logo-top");
+    tl.set(logoTop, {autoAlpha:0});
     
     var frame1 = document.querySelectorAll(".content-frame-1");
     var frame1_contentText = document.querySelectorAll(".content-frame-1 .content-text");
@@ -35,8 +37,8 @@ function createTimeline(){
     var frame1_blockText = document.querySelectorAll(".content-frame-1 .block-text");
     
     tl.set(contentBg, {x:30});
-    tl.set(frame1_contentText, {scale:1.3, x:40, y:40});
-    tl.set([frame1_text], {autoAlpha:0, y:10});
+    tl.set(frame1_contentText, {scale:1.2, x:150, y:0});
+    tl.set(frame1_text, {autoAlpha:0, x:10});
     tl.set(frame1_blockText, {scaleX:1.74, scaleY:1.51});
     tl.set([frame1_cta, frame1_ctaArrow], {autoAlpha:0, x:-10});
 
@@ -48,6 +50,7 @@ function createTimeline(){
 
         /* ***** Custom Gsap Timeline ***** */
         tl.addLabel("frame1");
+        tl.to(logoTop, {duration:0.6, autoAlpha:1, force3D:"true", ease: "power4.out"}, "frame1-=0.6");
         tl.to(fullBlock1, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1");
         tl.to(fullBlock2, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1+=0.1");
         tl.to(fullBlock3, {duration:0.8, x:"-100%", ease: "power4.out"}, "frame1+=0.4");
@@ -55,7 +58,7 @@ function createTimeline(){
         
         tl.to(contentBg, {duration:0.8, x:0, ease: "power3.out"}, "frame1+=0.4");
         
-        tl.to(frame1_text, {duration:1, stagger:1, autoAlpha:1, y:0, ease: "power3.out"}, "frame1+=0.4");
+        tl.to(frame1_text, {duration:1, stagger:1, autoAlpha:1, x:0, ease: "power3.out"}, "frame1+=0.4");
         
 
         tl.addLabel("frame2", "+=1.2");
@@ -63,7 +66,7 @@ function createTimeline(){
         tl.to(frame1_blockText, {duration:0.8, scale:1, ease: "power3.out"}, "frame2");
 
         tl.to([frame1_cta, frame1_ctaArrow], {duration:0.8, stagger:0.1, autoAlpha:1, x:0, ease: "power3.out"}, "frame2+=0.4");
-
+        tl.to(logoTop, {fill: "#07522c" , ease: "power4.out"}, "frame2");
         
         tl.addLabel("frame3", "+=2.2");
         tl.to(frame1_ctaArrow, {duration:0.2, scaleX:0.7, autoAlpha:0, x:120, ease: "power4.out"}, "frame3");

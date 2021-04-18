@@ -36,7 +36,7 @@ function createTimeline(){
     
     tl.set(contentBg, {x:30});
     tl.set(frame1_contentText, {scale:1.3, x:40, y:40});
-    tl.set([frame1_text], {autoAlpha:0, y:10});
+    tl.set([frame1_text], {autoAlpha:0, x:10});
     tl.set(frame1_blockText, {scaleX:1.74, scaleY:1.51});
     tl.set([frame1_cta, frame1_ctaArrow], {autoAlpha:0, x:-10});
 
@@ -55,7 +55,7 @@ function createTimeline(){
         
         tl.to(contentBg, {duration:0.8, x:0, ease: "power3.out"}, "frame1+=0.4");
         
-        tl.to(frame1_text, {duration:1, stagger:1, autoAlpha:1, y:0, ease: "power3.out"}, "frame1+=0.4");
+        tl.to(frame1_text, {duration:1, stagger:1, autoAlpha:1, x:0, ease: "power3.out"}, "frame1+=0.4");
         
 
         tl.addLabel("frame2", "+=1.2");
