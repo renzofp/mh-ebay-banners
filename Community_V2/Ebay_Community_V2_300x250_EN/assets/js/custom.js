@@ -64,7 +64,7 @@ function createTimeline(){
         tl.to(frame1_text, {duration:0.6, y:0, force3D:"true", ease: "power4.out"}, "frame2+=0.75");
 
         tl.to([frame1_cta, frame1_ctaArrow], {duration:0.8, stagger:0.1, autoAlpha:1, x:0, force3D:"true", ease: "power3.out"}, "frame2+=1.1");
-        tl.to(logoTop, {fill: "#07522c" , ease: "power4.out"}, "frame2");
+        tl.to(logoTop, {fill: "#592e13" , ease: "power4.out"}, "frame2");
 
 
         tl.addLabel("frame3", "+=2.2");
