@@ -245,12 +245,13 @@ img{
 }
 
 .content-frame .block-cta{
+    z-index: 1;
+	width:225px;
+    height: 76px;
+    top: 303px;
 	left:auto;
 	right:0;
 	bottom:150px;
-	width:225px;
-	height:75px;
-	z-index:9;
 	background:var(--color-2);
 }
 
@@ -258,25 +259,25 @@ img{
 	left:auto;
 	right:0;
 	bottom:0;
-	width:150px;
+	width:160px;
 	height:150px;
 	background:var(--color-6);
 }
 
 .content-frame .block-1{
-	bottom:0;
-	left:0;
-	height:225px;
-	width:75px;
+	width: 80px;
+    height: 71px;
+    bottom: 150px;
+    left: 0;
 	background:var(--color-3);
 	z-index:4;
 }
 
 .content-frame .block-2{
-	bottom:75px;
-	left:75px;
-	height:75px;
-	width:75px;
+	width: 80px;
+    height: 71px;
+    bottom: 150px;
+    left: 80px;
 	background:var(--color-5);
 	z-index:4;
 }
