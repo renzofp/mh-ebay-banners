@@ -237,7 +237,7 @@ img{
 .content-frame .content-cta img{
 	position:absolute;
 	left:0;
-	top:0;
+	top:21px;
 	width:100%;
 	height:auto;
 }
